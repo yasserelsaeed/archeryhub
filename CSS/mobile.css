@@ -1,0 +1,129 @@
+ /* nav-bar */
+
+
+#nav-bar .container{
+  flex-direction: column;
+  text-align: center;
+}
+#nav-bar .right-elements{
+  flex-direction: column;
+}
+#nav-bar ul{
+  /* display: block; */
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0.25rem;
+ 
+}
+  #nav-bar img{
+  display: block;
+  margin: auto;
+}
+#nav-bar ul li{
+  width:30%;
+}
+#nav-bar ul li a{
+  display: block;
+  padding: 0.3rem 0 ;
+  margin-bottom: 5px;
+  text-align: center;
+
+
+}
+#nav-bar .right-elements a.btn{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+
+#showcase{
+ margin-top: -176px;
+}
+
+.block{
+  display: block;
+}
+/* coaches */
+
+#coaches img{
+  width: 100%;
+}
+
+#prevbtn, #nextbtn{
+  font-size: 1rem;
+}
+/* testimonials */
+
+
+
+#testimonials-sponsors  .container{
+  display: block;
+}
+
+
+
+/* about page */
+
+.info-content{
+  display: block;
+}
+.l-heading-2{
+text-align: center;
+}
+
+#about-info .info-right video{
+  padding:20px 0;
+}
+
+/* vision-values-mission */
+
+#vision-values-mission .container{
+  display: block;
+}
+#vision-values-mission img{
+
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+
+/* contact page */
+
+#contact-info{
+  display: block;
+}
+
+
+
+/* locations */
+#locations-full .locations .location .map-image{
+  display: block;
+}
+
+.img-nxt-map{
+  display: none;
+}
+
+.map,.map2{
+  height:40vh;
+}
+
+/* join now page */
+#schedules-full .schedules, #memberships-full .memberships{
+  display: block;
+}
+.location, .schedule, .memberships{
+  padding: 1rem;
+}
+.full-logo{
+  display: none;
+}
+.location p{
+  font-size: 1rem;
+}
+
