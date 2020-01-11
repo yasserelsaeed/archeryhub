@@ -6,6 +6,11 @@
 
 /* Main Styling */
 
+:root{
+  --primary-color: #d17b24;
+  --light-color: var(--light-color);
+}
+
 html,body{
   font-family: 'Exo', sans-serif;
 }
@@ -15,9 +20,6 @@ a{
   color: #333;
 }
 
-/* h1,h2,h3{
-  padding-bottom: 20px;
-} */
 
 p{
   margin: 10px 0;
@@ -37,9 +39,9 @@ p{
   display: inline-block;
   cursor: pointer;
   border: none;
-  background: #d17b24;
+  background: var(--primary-color);
   border-radius: 10px;
-  color: #f4f4f4;
+  color: var(--light-color);
   padding: 0.75rem 2rem;
   text-align: center;
   font-size: 1.25em;
@@ -50,11 +52,11 @@ p{
 }
 
 .primary-text-light{
-  color: #e9923b;
+  color: rgb(230, 140, 23);
 }
 
 .primary-text-dark{
-  color: #d17b24;
+  color: var(--primary-color);
 }
 
 .l-heading{
@@ -80,7 +82,7 @@ p{
 .dark-box{
   background: #212121 ;
   border: #777 solid 1px;
-  color: #f4f4f4;
+  color: var(--light-color);
 }
 .light-box{
   background: #e8e8e8;
@@ -89,14 +91,14 @@ p{
 }
 
 .bg-light{
-  background: #f4f4f4;
+  background: var(--light-color);
   color: #333;
 }
 
 .black-bg
 {
   background: #000;
-  color: #f4f4f4;
+  color: var(--light-color);
 }
 
 .white-txt{
@@ -151,8 +153,8 @@ text-align: center;
 
 
 #nav-bar ul li a:hover{
-  background: #d17b24;
-  color: #f4f4f4;
+  background: var(--primary-color);
+  color: var(--light-color);
   border-radius: 5px;
 }
 
@@ -175,14 +177,14 @@ text-align: center;
   justify-content: center;
   align-items: center;
  
-  color: #f4f4f4;
+  color: var(--light-color);
   height: 100%; 
   width: 100%; 
   padding: 0 2rem;
 
   /* overlay */
  
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
 
 }
 /* coaches */
@@ -222,7 +224,7 @@ text-align: center;
   z-index: 1;
   font-size: 1.6rem;
   cursor: pointer;
-  color: #d17b24;
+  color: var(--primary-color);
 
 }
 #prevbtn{
@@ -395,12 +397,12 @@ padding: 0.5rem;
 }
 
 .question{
-  color: #d17b24;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 18px;
 }
 .more-questions{
-  color: #d17b24;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 2rem;
 }
