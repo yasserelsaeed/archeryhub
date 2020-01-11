@@ -8,7 +8,7 @@
 
 :root{
   --primary-color: #d17b24;
-  --light-color: var(--light-color);
+  --light-color: #f4f4f4;
 }
 
 html,body{
