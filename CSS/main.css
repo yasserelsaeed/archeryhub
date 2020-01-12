@@ -357,28 +357,91 @@ padding: 0.5rem;
   padding: 4rem 1.5rem;
 
 }
-#contact-form .form-group{
-  margin-bottom: 1.25rem;
+#contact-form p{
+  padding-bottom: 1rem ;
 }
-#contact-form .form-group label{
-  display: block;
-  margin-bottom: 0.25rem;
+.form-group{
+  margin-bottom: 3rem;
+
+}
+/* form-group-animated for name and email */
+#contact-form .form-group-animated{
+  position: relative;
+  height: 50px;
+  overflow: hidden;
 }
 
-#contact-form .form-group input,#contact-form .form-group textarea{
+
+#contact-form .form-group-animated input {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--light-color);
+}
+
+
+
+
+#contact-form .form-group-animated .label-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #aaa;
+  pointer-events: none;
+}
+
+.label-name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  border-bottom: #d48b2c 3px solid;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  
+}
+
+.label-name .content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.4s ease;
+}
+
+.form-group-animated input:focus+.label-name .content-name,
+.form-group-animated input:not(:placeholder-shown)+.label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+.form-group-animated input:focus+.label-name::after,.form-group-animated input:not(:placeholder-shown)+.label-name::after {
+  transform: translateX(0%);
+}
+
+#contact-form .form-group-message label{
+  display: block;
+  padding-bottom: 0.5rem;
+}
+
+#contact-form .form-group-message textarea{
   padding: 0.75rem;
   width: 100%;
   border: 1px #dddddd solid;
-}
-
-#contact-form .form-group textarea{
   height: 200px;
+  outline: none;
 }
 
-#contact-form .form-group input:focus,#contact-form .form-group textarea:focus{
-  outline: none;
-  border-color: #f7c08a;
+#contact-form .form-group-message textarea:focus{
+border: var(--primary-color) 1px solid;
 }
+
 
 /* contact info */
 
