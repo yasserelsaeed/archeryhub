@@ -45,6 +45,7 @@ p{
   padding: 0.75rem 2rem;
   text-align: center;
   font-size: 1.25em;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover{
@@ -148,6 +149,7 @@ text-align: center;
   padding:0.75rem 1.25rem;
   margin: 0 0.25rem;
   font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 
@@ -283,7 +285,13 @@ flex: 3;
 width: 150px;
 margin: auto;
 display: block;
+transition: all 0.3s ease;
 
+}
+#testimonials-sponsors .sponsor img:hover{
+
+  background: #333;
+  border-radius: 10px;
 }
 /* social */
 
@@ -299,7 +307,11 @@ display: block;
 .social i{
   margin: 20px 50px;
   color: #f7f7f7;
+  transition: all 0.3s ease;
+}
 
+.social i:hover{
+  transform: translateY(-8px);
 }
 
 
