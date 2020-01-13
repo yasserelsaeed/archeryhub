@@ -364,6 +364,10 @@ padding: 0.5rem;
   margin-bottom: 3rem;
 
 }
+.form-group input, .form-group textarea{
+  font-size: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* form-group-animated for name and email */
 #contact-form .form-group-animated{
   position: relative;
@@ -379,6 +383,16 @@ padding: 0.5rem;
   border: none;
   outline: none;
   background-color: var(--light-color);
+}
+
+/* to make the background of the input field the same color as the bg when using chrome auto-fill */
+
+#contact-form .form-group-animated input:-webkit-autofill,
+#contact-form .form-group-animated input:-webkit-autofill:hover,
+#contact-form .form-group-animated input:-webkit-autofill:focus,
+#contact-form .form-group-animated input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px var(--light-color) inset !important;
+
 }
 
 
@@ -436,6 +450,7 @@ padding: 0.5rem;
   border: 1px #dddddd solid;
   height: 200px;
   outline: none;
+
 }
 
 #contact-form .form-group-message textarea:focus{
