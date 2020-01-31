@@ -24,7 +24,7 @@ window.onresize = function(event) {
 
 nextbtn.addEventListener('click',()=>{
 if(counter>=carouselImages.length-3) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  carouselSlide.style.transition = "transform 0.6s ease-in-out";
   counter++;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -32,7 +32,7 @@ if(counter>=carouselImages.length-3) return;
 
 prevbtn.addEventListener('click',()=>{
   if(counter<=0) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  carouselSlide.style.transition = "transform 0.6s ease-in-out";
   counter--;
   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
@@ -50,3 +50,7 @@ carouselSlide.addEventListener('transitionend', ()=>{
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
   }
 });
+
+// timer for carousel
+
+setInterval(function () {document.getElementById("nextbtn").click();}, 5000);
