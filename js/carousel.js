@@ -53,4 +53,4 @@ carouselSlide.addEventListener('transitionend', ()=>{
 
 // timer for carousel
 
-setInterval(function () {document.getElementById("nextbtn").click();}, 5000);
+setInterval(function () {document.getElementById("nextbtn").click();}, 8000);
