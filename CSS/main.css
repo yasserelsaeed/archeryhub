@@ -527,13 +527,18 @@ border: var(--primary-color) 1px solid;
 }
 #locations-full .locations .location .map-image{
   display: flex;
-}
 
+}
+.img-nxt-map{
+  align-self: flex-end;
+}
 
 
 #locations-full .location .map-image .map,#locations-full .location .map-image .map2{
   flex: 2;
+
 }
+
 
 #locations-full .location .map-image img{
   flex: 1;
