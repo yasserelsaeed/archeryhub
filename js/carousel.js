@@ -1,6 +1,7 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-let size = carouselImages[0].clientWidth;
+carouselSlide.style.transform = 'translateX(' + (-(carouselImages[0].clientWidth) * counter) + 'px)';
+
 
 
 // buttons
@@ -11,9 +12,10 @@ const nextbtn = document.querySelector('#nextbtn');
 
 
 let counter = 1;
+let size = carouselImages[0].clientWidth;
 
 
-carouselSlide.style.transform = 'translateX(' + (-(carouselImages[0].clientWidth) * counter) + 'px)';
+
 
 window.onresize = function(event) {
   size = carouselImages[0].clientWidth;
