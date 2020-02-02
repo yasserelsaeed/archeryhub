@@ -1,6 +1,6 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-carouselSlide.style.transform = 'translateX(' + (-(carouselImages[0].clientWidth) * counter) + 'px)';
+carouselSlide.style.transform = 'translateX(' + (-(carouselImages[0].clientWidth) * 1) + 'px)';
 
 
 
