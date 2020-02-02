@@ -1,6 +1,6 @@
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-carouselSlide.style.transform = 'translateX(' + (-(carouselImages[0].clientWidth) * 1) + 'px)';
+
 
 
 
@@ -12,7 +12,9 @@ const nextbtn = document.querySelector('#nextbtn');
 
 
 let counter = 1;
-let size = carouselImages[0].clientWidth;
+let size = document.getElementById('last-clone').clientWidth;
+
+carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 
 
 
