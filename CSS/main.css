@@ -207,6 +207,7 @@ text-align: center;
 
 #coaches .carousel-container .carousel-slide{
   display: flex;
+  align-items: flex-start;
   width: 100%;
   
 }
