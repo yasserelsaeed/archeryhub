@@ -12,7 +12,7 @@ const nextbtn = document.querySelector('#nextbtn');
 
 
 let counter = 1;
-let size = document.getElementById('last-clone').offsetWidth;
+let size =  document.getElementById('carousel-container').clientWidth ;
 
 carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 
