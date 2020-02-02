@@ -49,7 +49,7 @@
 }
 /* coaches */
 
-#coaches img{
+#coaches .carousel-slide img{
   width: 100%;
 }
 

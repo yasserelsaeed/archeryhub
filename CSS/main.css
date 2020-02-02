@@ -212,7 +212,7 @@ text-align: center;
   
 }
 
-#coaches img{
+#coaches .carousel-slide img{
   width: 33.3%;
 }
 
