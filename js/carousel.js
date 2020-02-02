@@ -1,22 +1,21 @@
+
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');
-
-
-
 
 // buttons
 const prevbtn = document.querySelector('#prevbtn');
 const nextbtn = document.querySelector('#nextbtn');
 
 //counter
+counter = 1;
 
+// calculate size
+let size;
 
-let counter = 1;
-const firstSize = carouselImages[0].clientWidth;
-
-carouselSlide.style.transform = 'translateX(' + (- firstSize * counter) + 'px)';
-
-let size =  carouselImages[0].clientWidth;
+window.onload = function(event) {
+  size = carouselImages[0].clientWidth;
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+};
 
 
 
