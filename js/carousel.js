@@ -12,18 +12,18 @@ const nextbtn = document.querySelector('#nextbtn');
 
 
 let counter = 1;
-let size = document.getElementById('last-clone').clientWidth;
+let size = document.getElementById('last-clone').offsetWidth;
 
 carouselSlide.style.transform = 'translateX(' + (- size * counter) + 'px)';
 
 
 
 
-// window.onresize = function(event) {
-//   size = carouselImages[0].clientWidth;
-//   carouselSlide.style.transition = "none";
-//   carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// };
+window.onresize = function(event) {
+  size = carouselImages[0].clientWidth;
+  carouselSlide.style.transition = "none";
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+};
 
 // button listeners
 
