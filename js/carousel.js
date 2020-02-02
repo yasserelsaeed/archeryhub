@@ -12,7 +12,7 @@ const nextbtn = document.querySelector('#nextbtn');
 let counter = 1;
 let size = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+carouselSlide.style.transform = 'translateX(' + (-size * 1) + 'px)';
 
 window.onresize = function(event) {
   size = carouselImages[0].clientWidth;
