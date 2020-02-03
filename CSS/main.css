@@ -230,6 +230,10 @@ text-align: center;
   color: var(--primary-color);
 
 }
+
+#prevbtn:hover, #nextbtn:hover{
+  color: #97510b;
+}
 #prevbtn{
   left: 3%;
 }
