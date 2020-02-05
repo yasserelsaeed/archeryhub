@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- website icon -->
   <link rel="icon" href="./img/logoUp.png" type="image/icon type">
+    <!-- animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Exo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./CSS/main.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="./CSS/mobile.css">
@@ -46,11 +50,11 @@
 
   </header>
 
-  <section id="coaches" class="black-bg">
+  <section id="coaches" class="black-bg" >
 
 
 
-    <h2 class="l-heading-2 py-3 center-txt">Meet Our World Class<span class="primary-text-dark"> Coaches</span></h2>
+    <h2 class="l-heading-2 py-3 center-txt" data-aos="fade-up" >Meet Our World Class<span class="primary-text-dark"> Coaches</span></h2>
 
 
 
@@ -61,9 +65,9 @@
         <div class="carousel-slide" >
 
           <img src="./img/coachfawzy.jpg" id="last-clone" alt="C.Fawzy">
-          <img src="./img/coachgarf.jpg" alt="C.Garf">
-          <img src="./img/coachkhairat.jpg" alt="C.Khairat">
-          <img src="./img/coachfakhry.jpg" alt="C.Fakhry">
+          <img data-aos="fade-up" src="./img/coachgarf.jpg" alt="C.Garf">
+          <img data-aos="fade-up" data-aos-delay="250" src="./img/coachkhairat.jpg" alt="C.Khairat">
+          <img data-aos="fade-up" data-aos-delay="500" src="./img/coachfakhry.jpg" alt="C.Fakhry">
           <img src="./img/coachnemr.jpg" alt="C.Nemr">
           <img src="./img/coachhariry.jpg" alt="C.Hariry">
           <img src="./img/coachfawzy.jpg" alt="C.Fawzy">
@@ -84,8 +88,8 @@
   <section id="testimonials-sponsors" class="black-bg">
     <div class="container">
       <div class="testimonials">
-        <h2 class="l-heading-2 py-2">What Our <span class="primary-text-dark">Guests</span> Say</h2>
-
+        <h2 class="l-heading-2 py-2" data-aos="fade-up">What Our <span class="primary-text-dark">Guests</span> Say</h2>
+<div data-aos="fade-up">
         <div class="testimonial box dark-box">
           <div class="tstim-img">
             <img src="./img/yasser(2).png" alt="">
@@ -105,15 +109,15 @@
             <p>Seif Elsehely</p>
           </div>
         </div>
-
+      </div>
 
       </div>
 
 
       <div class="sponsors">
-        <h2 class=" l-heading-2 py-2"> Our <span class="primary-text-dark">Sponsors</span> </h2>
+        <h2 class=" l-heading-2 py-2" data-aos="fade-up" data-aos-delay="300"> Our <span class="primary-text-dark">Sponsors</span> </h2>
 
-        <div class="sponsor box dark-box">
+        <div class="sponsor box dark-box" data-aos="fade-up" data-aos-delay="300">
           <a href="https://sigmafiteg.com/" target="_blank"><img src="./img/sigma(5).png" alt="SigmaFit"></a>
           <h2></h2>
           <p>Sigma Fit is a techwear company that creates revolutionary products to solve people’s daily challenges.
@@ -130,14 +134,14 @@
 
   <section class="social">
     <div class="container">
-      <h2 class="l-heading-2 py-1"> We're <span class="primary-text-dark">Social,</span> Follow Us On </h2>
+      <h2 class="l-heading-2 py-1" data-aos="fade-up" data-aos-offset="50"> We're <span class="primary-text-dark">Social,</span> Follow Us On </h2>
 
       <a href="https://www.facebook.com/ArcheryHub/" target="_blank">
-        <i class="fab fa-facebook-square fa-5x"></i>
+        <i class="fab fa-facebook-square fa-5x" data-aos="fade-right" data-aos-delay="300" data-aos-offset="150"></i>
       </a>
 
       <a href="https://www.instagram.com/archeryhub/?hl=en" target="_blank">
-        <i class="fab fa-instagram fa-5x"></i>
+        <i class="fab fa-instagram fa-5x"  data-aos="fade-right" data-aos-offset="150"></i>
       </a>
     </div>
 
@@ -163,6 +167,15 @@
 
   <script src="./js/carousel.js"></script>
 
+ <!-- animate on scroll -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     offset:250,
+     duration:1000,
+     once:true
+   });
+ </script>
 
 </body>
 

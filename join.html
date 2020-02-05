@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="./img/logoUp.png" type="image/icon type">
+
+     <!-- animate on scroll -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Exo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="./CSS/mobile.css">
@@ -47,7 +51,7 @@
 
           <div class="location-info">
             <div>
-              <img src="./img/logoleft.png" alt="logo left">
+              <img src="./img/logoleft.png" alt="logo left" data-aos="fade-left">
               <h4 class="l-heading-3"><span class="primary-text-dark">WEST</span> TOWN</h4>
               <p>ALSSON-NEWGIZA</p>
             </div>
@@ -65,7 +69,7 @@
 
           <div class="location-info">
             <div>
-              <img src="./img/logoright.png" alt="logo right">
+              <img src="./img/logoright.png" alt="logo right" data-aos="fade-right">
               <h4 class="l-heading-3"><span class="primary-text-dark">EAST</span> TOWN</h4>
               <p>SODIC EAST TOWN</p>
             </div>
@@ -179,7 +183,17 @@
   <script src="./js/map.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm2Vz0tPOYstiUduSqxcFV64LB3t3uZhY&callback=initMap"
     async defer></script>
-  
+
+    
+   <!-- animate on scroll -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init({
+     offset:250,
+     duration:1000,
+     once:true
+   });
+ </script>
 
 </body>
 
