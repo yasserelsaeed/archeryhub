@@ -270,6 +270,10 @@ display: flex;
 align-items: center;
 
 }
+.testimonial {
+  height:10rem;
+
+}
 .testimonial .tstim-img{
   flex: 1;
   padding-right: 1rem;
@@ -292,6 +296,9 @@ margin: auto;
 display: block;
 transition: all 0.3s ease;
 
+}
+.sponsor{
+  height: 20.7rem;
 }
 #testimonials-sponsors .sponsor img:hover{
 

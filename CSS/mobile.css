@@ -65,7 +65,9 @@
 }
 /* testimonials */
 
-
+.testimonial{
+  height: auto;
+}
 
 #testimonials-sponsors  .container{
   display: block;
