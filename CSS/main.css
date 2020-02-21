@@ -44,7 +44,7 @@ p{
   color: var(--light-color);
   padding: 0.75rem 2rem;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 1.1em;
   transition: all 0.2s ease-in-out;
 }
 
@@ -116,10 +116,11 @@ text-align: center;
 /* Nav Bar */
 
 .trans-nav{
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.5);
   position: relative;
    /* position: sticky; */
   top: 0; 
+  backdrop-filter:  blur(5px);
 
 }
  #nav-bar .container{
@@ -133,7 +134,7 @@ text-align: center;
   align-items: center;
 }
 #nav-bar .logo{
-  height: 80px;
+  height: 70px;
 }
 
 #nav-bar ul{
@@ -148,7 +149,7 @@ text-align: center;
  
   padding:0.75rem 1.25rem;
   margin: 0 0.25rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -166,7 +167,7 @@ text-align: center;
 
 #showcase{
   background: url('../img/jake.jpg') no-repeat center left/cover;
-   margin-top: -86px;
+   margin-top: -76px;
   height: 100vh;
 }
 
