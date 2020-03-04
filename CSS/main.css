@@ -333,10 +333,10 @@ transition: all 0.3s ease;
 
 .fa-facebook-square:hover {
   color: #3b5998;
-  /* background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
+  background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
   background-size: 70%;
   background-position: 70% 0;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 /* About Page */
